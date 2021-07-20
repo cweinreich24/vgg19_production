@@ -1,10 +1,10 @@
-from keras.preprocessing.image import load_img
-from keras.preprocessing.image import img_to_array
-from keras.applications.vgg19 import preprocess_input
-from keras.applications.vgg19 import decode_predictions
-from keras.applications.vgg19 import VGG19
-from keras.models import load_model
 import tensorflow as tf
+from tensorflow.keras.preprocessing.image import load_img
+from tensorflow.keras.preprocessing.image import img_to_array
+from tensorflow.keras.applications.vgg19 import preprocess_input
+from tensorflow.keras.applications.vgg19 import decode_predictions
+from tensorflow.keras.applications.vgg19 import VGG19
+from tensorflow.keras.models import load_model
 
 model = tf.keras.models.load_model('vgg19.h5')
 
